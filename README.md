@@ -36,7 +36,7 @@ If multiple people are present in the frame, the person with the largest boundin
 Afterwards, a bounding box is drawn only around the user, and the system tracks this user.  
 ![image](https://github.com/user-attachments/assets/d641079a-4f20-4cc6-8278-8572ce908963)  
   
-(직진 Forward)  
+## (직진 Forward)  
 사용자에게 그려진 bounding box의 greendot_x, greendot_y의 값과 카메라 프레임의 bluedot_x, bluedot_y의 값을 이용하여 bluedot_x – greendot_x < 190이고bluedot_y – greendot_y >= 15이면 직진 하도록 한다.  
 Using the values of greendot_x and greendot_y from the bounding box drawn around the user, and the values of bluedot_x and bluedot_y from the camera frame, the system is set to move forward if bluedot_x - greendot_x < 190 and bluedot_y - greendot_y >= 15.  
 ![image](https://github.com/user-attachments/assets/d59fc64e-0e34-4a84-b4ee-48f1a2f82d1b)  
