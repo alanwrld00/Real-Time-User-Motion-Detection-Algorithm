@@ -41,17 +41,17 @@ Afterwards, a bounding box is drawn only around the user, and the system tracks 
 Using the values of greendot_x and greendot_y from the bounding box drawn around the user, and the values of bluedot_x and bluedot_y from the camera frame, the system is set to move forward if bluedot_x - greendot_x < 190 and bluedot_y - greendot_y >= 15.  
 ![image](https://github.com/user-attachments/assets/d59fc64e-0e34-4a84-b4ee-48f1a2f82d1b)  
   
-(좌회전 Left turn)  
+## (좌회전 Left turn)  
 사용자에게 그려진 bounding box의 greendot_x, greendot_y의 값과 카메라 프레임의 bluedot_x, bluedot_y의 값을 이용하여 bluedot_x > greendot_x이면 좌회전하도록 한다.  
 Using the values of greendot_x and greendot_y from the bounding box drawn around the user, and the values of bluedot_x and bluedot_y from the camera frame, the system is set to turn left if bluedot_x > greendot_x.  
 ![image](https://github.com/user-attachments/assets/03c778c3-8f0d-4ba6-8a0b-b19af3ef0a2c)  
   
-(우회전 Right turn)  
+## (우회전 Right turn)  
 사용자에게 그려진 bounding box의 greendot_x, greendot_y의 값과 카메라 프레임의 bluedot_x, bluedot_y의 값을 이용하여 bluedot_x < greendot_x이면 우회전하도록 한다.  
 Using the values of greendot_x and greendot_y from the bounding box drawn around the user, and the values of bluedot_x and bluedot_y from the camera frame, the system is set to turn right if bluedot_x < greendot_x.  
 ![image](https://github.com/user-attachments/assets/ddff1524-1f04-4a4e-8d0c-196ad7d610b0)  
   
-(정지 Stop)  
+## (정지 Stop)  
 사용자에게 그려진 bounding box의 greendot_x, greendot_y의 값과 카메라 프레임의 bluedot_x, bluedot_y의 값을 이용하여 카메라에 사용자가 잡히지 않을 때(greendot_x = None, greendot_y = None일 때) 또는 bluedot_x – greendot_x < 190이고 bluedot_y – greendot_y < 15이면 정지 하도록 한다.  
 Using the values of greendot_x and greendot_y from the bounding box drawn around the user, and the values of bluedot_x and bluedot_y from the camera frame, the system is set to stop if the user is not detected by the camera (when greendot_x = None and greendot_y = None) or if bluedot_x - greendot_x < 190 and bluedot_y - greendot_y < 15.  
 ![image](https://github.com/user-attachments/assets/2152eb11-d5e6-45b1-a6f5-cd4dae74f3dc)  
