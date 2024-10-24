@@ -161,7 +161,7 @@ void main(void)
             OCR1BL = 0x19;
             break;
 
-        case 'X':
+        case 'x':
             PORTB.0 = 0x01;
             PORTB.1 = 0x00;
             PORTB.2 = 0x01;
