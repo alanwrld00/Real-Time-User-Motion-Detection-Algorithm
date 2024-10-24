@@ -177,7 +177,7 @@ void main(void)
                 delay_ms(250);
                 DDRE = 0x00;
 
-                if (i == 0)
+                if (!i)
                     delay_ms(50);
             }
             break;
